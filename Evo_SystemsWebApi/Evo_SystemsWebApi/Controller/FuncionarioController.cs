@@ -17,10 +17,6 @@ namespace Evo_SystemsWebApi.Controller
 
         private IfuncionarioRepository _funcionarioRepository { get; set; }
 
-        public FuncionarioController()
-        {
-            _funcionarioRepository = new funcionarioRepository();
-        }
 
         /// <summary>
         /// Lista todos os funcionario
@@ -49,11 +45,7 @@ namespace Evo_SystemsWebApi.Controller
         }
 
 
-        /// <summary>
-        /// Atualizar um Funcionario existente
-        /// </summary>
-        /// <param name="funcionarioAtualizado">objeto funcionarioAtualizado que será atualizado</param>
-        /// <returns>um statud code 201- Atualizar</returns
+
         [HttpPut("{id}")]
         public IActionResult Put(int id, Funcionario funcionarioAtualizado)
         {

@@ -17,10 +17,6 @@ namespace Evo_SystemsWebApi.Controller
 
         private IdepartamentoRepository _departamentoRepository { get; set; }
 
-        public DepartamentoController()
-        {
-            _departamentoRepository = new departamentoRepository();
-        }
 
         /// <summary>
         /// Lista todos os Departamentos
@@ -49,11 +45,7 @@ namespace Evo_SystemsWebApi.Controller
         }
 
 
-        /// <summary>
-        /// Atualizar um Funcionario existente
-        /// </summary>
-        /// <param name="departamentoAtualizado">objeto funcionarioAtualizado que será atualizado</param>
-        /// <returns>um statud code 201- Atualizar</returns
+      
         [HttpPut("{id}")]
         public IActionResult Put(int id, Departamento departamentoAtualizado)
         {

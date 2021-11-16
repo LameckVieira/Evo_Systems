@@ -43,6 +43,8 @@ namespace Evo_SystemsWebApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Evo_Systems", Version = "v1" });
             });
 
+          
+
             //JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>

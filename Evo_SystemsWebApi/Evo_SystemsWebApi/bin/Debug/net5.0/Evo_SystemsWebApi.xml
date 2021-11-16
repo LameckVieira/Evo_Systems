@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Evo_SystemsWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Evo_SystemsWebApi.Context.Evo_SystemsContext">
+            <summary>
+            Classe responsável pelo context do projeto
+            Faz a cominicação entre API e o Banco de dados
+            </summary>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Controller.DepartamentoController.Get">
+            <summary>
+            Lista todos os Departamentos
+            </summary>
+            <returns>Uma lista de Departamento e um status code 200 - ok </returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Controller.DepartamentoController.Post(Evo_SystemsWebApi.Domains.Departamento)">
+            <summary>
+            Cadastra um novo Departamento
+            </summary>
+            <param name="novoDepartamento">objeto novoDepartamento que será cadastrado</param>
+            <returns>um statud code 201- Created</returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Controller.FuncionarioController.Get">
+            <summary>
+            Lista todos os funcionario
+            </summary>
+            <returns>Uma lista de funcionario e um status code 200 - ok </returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Controller.FuncionarioController.Post(Evo_SystemsWebApi.Domains.Funcionario)">
+            <summary>
+            Cadastra um novo Funcionario
+            </summary>
+            <param name="NovoFuncionario">objeto NovoFuncionario que será cadastrado</param>
+            <returns>um statud code 201- Created</returns>
+        </member>
+        <member name="T:Evo_SystemsWebApi.Domains.Funcionario">
+            <summary>
+            Classe que representa a entidade Funcionario
+            </summary>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IdepartamentoRepository.Listar">
+            <summary>
+            Lista todos os Departamento
+            </summary>
+            <returns>Uma lista de Departamento</returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IdepartamentoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Departamento através do ID
+            </summary>
+            <param name="id">ID do Departamento que será buscado</param>
+            <returns>Um Departamento buscado</returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IdepartamentoRepository.Cadastrar(Evo_SystemsWebApi.Domains.Departamento)">
+            <summary>
+            Cadastra um novo Departamento
+            </summary>
+            <param name="novoDepartamento">Objeto novo Departamento que será cadastrado</param>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IdepartamentoRepository.Atualizar(System.Int32,Evo_SystemsWebApi.Domains.Departamento)">
+            <summary>
+            Atualiza um departamento existente
+            </summary>
+            <param name="id">id do Funcionario que será atualizado</param>
+            <param name="departamentoAtualizado">Objeto departamento atualizado com as novas Informações</param>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IdepartamentoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Departamento existente
+            </summary>
+            <param name="id">ID do Departamento que será deletado</param>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IfuncionarioRepository.Listar">
+            <summary>
+            Lista todos os Funcionario
+            </summary>
+            <returns>Uma lista de Funcionario</returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IfuncionarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Funcionario através do ID
+            </summary>
+            <param name="id">ID do Funcionario que será buscado</param>
+            <returns>Um Funcionario buscado</returns>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IfuncionarioRepository.Cadastrar(Evo_SystemsWebApi.Domains.Funcionario)">
+            <summary>
+            Cadastra um novo Funcionario
+            </summary>
+            <param name="novoFuncionario">Objeto novoFuncionario que será cadastrado</param>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IfuncionarioRepository.Atualizar(System.Int32,Evo_SystemsWebApi.Domains.Funcionario)">
+            <summary>
+            Atualiza um Funcionario existente
+            </summary>
+            <param name="id">id do Funcionario que será atualizado</param>
+            <param name="FuncionarioAtualizado">Objeto Funcionario atualizado com as novas Informações</param>
+        </member>
+        <member name="M:Evo_SystemsWebApi.Interfaces.IfuncionarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Funcionario existente
+            </summary>
+            <param name="id">ID do Funcionario que será deletado</param>
+        </member>
+    </members>
+</doc>

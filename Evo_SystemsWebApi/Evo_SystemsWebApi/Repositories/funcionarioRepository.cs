@@ -10,8 +10,12 @@ namespace Evo_SystemsWebApi.Repositories
 {
     public class funcionarioRepository : IfuncionarioRepository
     {
+        private readonly Evo_SystemsContext ctx;
+        public funcionarioRepository(Evo_SystemsContext _ctx)
+        {
+            ctx = _ctx;
+        }
 
-        Evo_SystemsContext ctx = new Evo_SystemsContext();
 
         public void Atualizar(int id, Funcionario funcionarioAtualizado)
         {

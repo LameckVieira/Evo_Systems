@@ -11,7 +11,11 @@ namespace Evo_SystemsWebApi.Repositories
     public class departamentoRepository : IdepartamentoRepository
     {
 
-        Evo_SystemsContext ctx = new Evo_SystemsContext();
+        private readonly Evo_SystemsContext ctx;
+        public departamentoRepository(Evo_SystemsContext _ctx)
+        {
+            ctx = _ctx;
+        }
 
         public void Atualizar(int id, Departamento departamentoAtualizado)
         {

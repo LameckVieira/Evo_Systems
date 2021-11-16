@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lameck\\Desktop\\Vaga\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj": {}
+    "C:\\Users\\08657641313\\Desktop\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lameck\\Desktop\\Vaga\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj": {
+    "C:\\Users\\08657641313\\Desktop\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lameck\\Desktop\\Vaga\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\08657641313\\Desktop\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj",
         "projectName": "Evo_SystemsWebApi",
-        "projectPath": "C:\\Users\\Lameck\\Desktop\\Vaga\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj",
-        "packagesPath": "C:\\Users\\Lameck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lameck\\Desktop\\Vaga\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\obj\\",
+        "projectPath": "C:\\Users\\08657641313\\Desktop\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\Evo_SystemsWebApi.csproj",
+        "packagesPath": "C:\\Users\\08657641313\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\08657641313\\Desktop\\Evo_Systems\\Evo_SystemsWebApi\\Evo_SystemsWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lameck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\08657641313\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,13 +58,13 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[5.0.12, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[1.1.6, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -74,7 +74,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[5.6.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

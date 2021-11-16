@@ -14,6 +14,12 @@ namespace Evo_SystemsWebApi.Context
 
     public class Evo_SystemsContext : DbContext
     {
+
+        public Evo_SystemsContext(DbContextOptions<Evo_SystemsContext> options)
+        {
+
+        }
+
         // Define as entidades do Banco de dados
         public DbSet<Funcionario> Funcionarios { get; set; }
 
@@ -23,7 +29,7 @@ namespace Evo_SystemsWebApi.Context
             (DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer
-                ("Data Source=DESKTOP-0KGDOK7; initial catalog=Evo_Systems; Integrated Security=True;");
+                ("Data Source=DESKTOP-LGP4V2C\\SQLEXPRESS; initial catalog=Evo_Systems; Integrated Security=True;");
 
             base.OnConfiguring(optionsBuilder);
         }
