@@ -1,4 +1,6 @@
 using Evo_SystemsWebApi.Context;
+using Evo_SystemsWebApi.Interfaces;
+using Evo_SystemsWebApi.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -84,6 +86,15 @@ namespace Evo_SystemsWebApi
                                         .AllowAnyMethod()
                                         .AllowAnyHeader());
             });
+
+            // Injeções de dependências
+            #region Injeção de dependência de departamento
+            services.AddTransient<IdepartamentoRepository, departamentoRepository>();
+            #endregion
+
+            #region Injeção de dependência de funcionario
+            services.AddTransient<IfuncionarioRepository, funcionarioRepository>();
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

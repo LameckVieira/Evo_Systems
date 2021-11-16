@@ -17,16 +17,21 @@ namespace Evo_SystemsWebApi.Controller
 
         private IfuncionarioRepository _funcionarioRepository { get; set; }
 
+        public FuncionarioController(IfuncionarioRepository funcionarioRepository)
+        {
+            _funcionarioRepository = funcionarioRepository;
+        }
+
 
         /// <summary>
         /// Lista todos os funcionario
         /// </summary>
         /// <returns>Uma lista de funcionario e um status code 200 - ok </returns>
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
         {
             //retorna a resposta da  requisição fazendo uma chamada para o método
-            return Ok(_funcionarioRepository.Listar());
+            return Ok(_funcionarioRepository.BuscarPorId(id));
         }
 
         /// <summary>

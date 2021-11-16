@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Evo_SystemsWebApi.Interfaces
 {
-    interface IdepartamentoRepository
+    public interface IdepartamentoRepository
     {
 
         /// <summary>

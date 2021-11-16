@@ -23,7 +23,7 @@
             <param name="novoDepartamento">objeto novoDepartamento que será cadastrado</param>
             <returns>um statud code 201- Created</returns>
         </member>
-        <member name="M:Evo_SystemsWebApi.Controller.FuncionarioController.Get">
+        <member name="M:Evo_SystemsWebApi.Controller.FuncionarioController.Get(System.Int32)">
             <summary>
             Lista todos os funcionario
             </summary>

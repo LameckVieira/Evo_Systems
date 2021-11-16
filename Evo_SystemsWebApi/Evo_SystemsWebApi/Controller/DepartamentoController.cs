@@ -17,6 +17,11 @@ namespace Evo_SystemsWebApi.Controller
 
         private IdepartamentoRepository _departamentoRepository { get; set; }
 
+        public DepartamentoController(IdepartamentoRepository idepartamentoRepository)
+        {
+            _departamentoRepository = idepartamentoRepository;
+        }
+
 
         /// <summary>
         /// Lista todos os Departamentos
