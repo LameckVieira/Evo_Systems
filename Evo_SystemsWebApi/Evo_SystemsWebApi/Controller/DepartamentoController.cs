@@ -22,7 +22,7 @@ namespace Evo_SystemsWebApi.Controller
         /// Lista todos os Departamentos
         /// </summary>
         /// <returns>Uma lista de Departamento e um status code 200 - ok </returns>
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult Get()
         {
             //retorna a resposta da  requisição fazendo uma chamada para o método
@@ -39,9 +39,19 @@ namespace Evo_SystemsWebApi.Controller
 
         {
             //faza a chamada para o método 
-            _departamentoRepository.Cadastrar(novoDepartamento);
 
-            return StatusCode(201);
+            try
+            {
+                _departamentoRepository.Cadastrar(novoDepartamento);
+
+                return StatusCode(201);
+            }
+            catch (Exception jj)
+            {
+
+                return BadRequest(jj);
+            }
+           
         }
 
 
@@ -71,6 +81,7 @@ namespace Evo_SystemsWebApi.Controller
             return StatusCode(204);
 
         }
+
 
     }
 }
